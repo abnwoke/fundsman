@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Homesalet",
+    "slug": "homesalet",
+    "scheme": "rex",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash_screen.jpg",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.afciti.homesalet",
+      "config": {
+        "googleMapsApiKey": "AIzaSyAHHoifTiYGFmHWMKXRZGcmCT7Kj5nfcFk"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.afciti.homesalet",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAHHoifTiYGFmHWMKXRZGcmCT7Kj5nfcFk"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.ico"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "adef7fb5-1975-4605-bf1b-10cd717c9abb"
+      }
+    },
+    "owner": "abnwoke",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/007ced7d-c854-4762-82e7-803189f063c9"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to accesses your photos",
+          "cameraPermission": "Allow $(PRODUCT_NAME) to accesses your camera"
+        }
+      ]
+    ]
+  }
+}
